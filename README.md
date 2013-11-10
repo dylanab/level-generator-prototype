@@ -16,13 +16,13 @@ damage to the station (they're supposed to be abandoned), and populate it with l
 
 ##INSTRUCTIONS:
 
-  ###OPTION 1 :
+  OPTION 1 :
   run the included executable
 
-  ###OPTION 2 :
+  OPTION 2 :
   open the RandomGenTest.project file in Game Maker: Studio
   
-  ###OPTION 3 : 
+  OPTION 3 : 
   import the included RandomGenTest.gmz file with Game Maker: Studio
 
 
