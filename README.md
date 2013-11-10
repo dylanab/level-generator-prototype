@@ -14,19 +14,19 @@ This "area" is meant represent one department of a space station, like Engineeri
 We intend to expand the generator to construct multiple areas connected by hallways and maintenance, generate
 damage to the station (they're supposed to be abandoned), and populate it with loot and enemies. 
 
-INSTRUCTIONS:
+##INSTRUCTIONS:
 
-  OPTION 1 :
+  ###OPTION 1 :
   run the included executable
 
-  OPTION 2 :
+  ###OPTION 2 :
   open the RandomGenTest.project file in Game Maker: Studio
   
-  OPTION 3 : 
+  ###OPTION 3 : 
   import the included RandomGenTest.gmz file with Game Maker: Studio
 
 
-CONTROLS:
+##CONTROLS:
 
 use ASDW keys to move around the area. 
 
