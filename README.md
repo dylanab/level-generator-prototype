@@ -9,10 +9,13 @@ departments, wide hallways, and snaking maintance corridors.
 Currently, the generator divides a 4 x 4 grid of "room slots" - called an area - into a series of rooms, 
 each denoted by a different color. Room slots that appear black are those that were not selected.
 
+There are no doors or walls yet (I'm making that next) but the rooms progress from one to the other in 
+the following order: grey -> pink -> blue -> green -> red -> yellow
+
 This "area" is meant represent one department of a space station, like Engineering, Security, or the Medbay.
 
-We intend to expand the generator to construct multiple areas connected by hallways and maintenance, generate
-damage to the station (they're supposed to be abandoned), and populate it with loot and enemies. 
+We intend to expand the generator to construct multiple areas connected by hallways and maintenance corridors, 
+generate damage to the station (they're supposed to be abandoned), and populate it with loot and enemies. 
 
 ##INSTRUCTIONS:
 
