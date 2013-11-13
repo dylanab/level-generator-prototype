@@ -22,7 +22,6 @@
   <scripts name="scripts">
     <script>scripts\scr_build_room.gml</script>
     <script>scripts\scr_build_area.gml</script>
-    <script>scripts\scr_choose_rooms.gml</script>
     <script>scripts\scr_player_move.gml</script>
     <script>scripts\scr_choose_rtemplate.gml</script>
     <script>scripts\scr_divide_area.gml</script>

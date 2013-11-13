@@ -25,25 +25,25 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//the level's width and height in rooms
+            <string>//the area's width and height in rooms
 var area_width = 4; 
 var area_height = 4; 
 
 //create a 2d array of roomslot objects
-//TODO: figure out if we should place them at their correct x, y positions 
-//or if it doesn't matter.
 globalvar room_slots;
 global.room_slots = ds_grid_create(area_width, area_height); 
 
 for(i = 0; i &lt; area_width; i++) { //rows
     for(j = 0; j &lt; area_height; j++) { //cols
-        ds_grid_add(global.room_slots, i, j, instance_create(x, y, obj_room_slot))
-        //global.room_slots[i, j] = instance_create(x, y, obj_room_slot);
+        ds_grid_add(global.room_slots, i, j, instance_create(x, y, obj_room_slot));
     }
 }
 
-//build a grid of rooms based on those values. 
-scr_build_area(area_width, area_height, "left");
+randomize();
+start_side = choose("top", "bottom", "left", "right")
+
+//build the area!
+scr_build_area(area_width, area_height, start_side);
 </string>
           </argument>
         </arguments>

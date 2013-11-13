@@ -1,3 +1,6 @@
+/* This doesn't do anything for now.
+
+
 room_array[20, 20] = 0;
 
 room_type = choose(0 , 1, 2, 3);
@@ -17,3 +20,4 @@ switch(room_type) {
         break;
 }
 
+*/

@@ -7,7 +7,7 @@ var tile_size = 32; // width/height of the room's tiles
 var r_width = 10;   // width of rooms in tiles
 var r_height = 10;  // height of rooms in tiles
 
-var room_space = tile_size;  //gap between rooms
+var room_space = tile_size;  //gap between rooms (not currently in use)
 
 var can_expand_room = true;
 var can_make_rooms = true;
@@ -59,9 +59,8 @@ switch(start_side) {
 //divide the area's room slots into rooms
 scr_divide_area(start_room_x, start_room_y, area_width, area_height, rooms_to_make); 
 
-/*
-*   cycle through the room slots and draw each one. 
-*/
+   
+//cycle through the room slots and draw each one. 
 for(var i = 0; i < area_width; i++) {
     for(var j = 0; j < area_height; j++) {
         //choose the floor type based on the room slot's room tag
@@ -90,15 +89,9 @@ for(var i = 0; i < area_width; i++) {
             default:
                 break;
         }
-        //instance_create(current_x, current_y, obj_wall);
-        //current_x += room_space; 
     }
-    //current_x = 0;
     current_y = 0;
-    current_x += (r_width * tile_size) 
-    //current_y += (r_height * tile_size) 
-    //instance_create(current_x, current_y, obj_wall);
-    //current_y += room_space;
+    current_x += (r_width * tile_size);
 }
 
 

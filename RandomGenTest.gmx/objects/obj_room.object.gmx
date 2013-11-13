@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_path[0] = noone;
+            <string>room_path[0] = 0;
 </string>
           </argument>
         </arguments>
