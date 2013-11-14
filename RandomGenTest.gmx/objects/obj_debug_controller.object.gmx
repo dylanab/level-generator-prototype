@@ -32,6 +32,9 @@ with(instance_nearest(x, y, obj_area_builder)) {
 with(pnt_floor) {
     instance_destroy();
 }
+with(pnt_wall) {
+    instance_destroy();
+}
 with(obj_debug_display) {
     instance_destroy();
 }

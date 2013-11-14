@@ -59,36 +59,13 @@ switch(start_side) {
 //divide the area's room slots into rooms
 scr_divide_area(start_room_x, start_room_y, area_width, area_height, rooms_to_make); 
 
-   
+//decide where to build walls
+scr_check_walls(area_width, area_height, global.room_slots);
+
 //cycle through the room slots and draw each one. 
 for(var i = 0; i < area_width; i++) {
     for(var j = 0; j < area_height; j++) {
-        //choose the floor type based on the room slot's room tag
-        switch(ds_grid_get(global.room_slots, i, j).room_tag) {
-            case 0:
-                scr_build_room(r_width, r_height, current_x, current_y, obj_floor_0);
-                break;
-            case 1: 
-                scr_build_room(r_width, r_height, current_x, current_y, obj_floor_1);
-                break;
-            case 2: 
-                scr_build_room(r_width, r_height, current_x, current_y, obj_floor_2);
-                break;
-            case 3:
-                scr_build_room(r_width, r_height, current_x, current_y, obj_floor_3);
-                break;
-            case 4:
-                scr_build_room(r_width, r_height, current_x, current_y, obj_floor_4);
-                break;
-            case 5:
-                scr_build_room(r_width, r_height, current_x, current_y, obj_floor_5);
-                break;
-            case 6:
-                scr_build_room(r_width, r_height, current_x, current_y, obj_floor_6);
-                break;
-            default:
-                break;
-        }
+        scr_build_room(r_width, r_height, current_x, current_y, ds_grid_get(global.room_slots, i, j));
     }
     current_y = 0;
     current_x += (r_width * tile_size);

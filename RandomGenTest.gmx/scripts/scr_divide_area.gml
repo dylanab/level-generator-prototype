@@ -105,14 +105,15 @@ for(var ii = 0; ii < rooms_to_make && can_make_rooms; ii++) {
             } //switch(next_dir)
         } //while(!dir_is_good)
         
-        show_debug_message("adding room slot at " + string(room_x) + ", " + string(room_y) + " to room " + string(ii + 1));
-        global.rooms[ii].room_path[jj] = ds_grid_get(global.room_slots, room_x, room_y);
-        global.rooms[ii].room_path[jj].room_tag = (ii + 1); 
-        //let the room_slot know what its room_x and room_y are
-        global.rooms[ii].room_path[jj].room_x = room_x;
-        global.rooms[ii].room_path[jj].room_y = room_y;
-        rooms_added++;
-        
+        if(ds_grid_get(global.room_slots, room_x, room_y).room_tag == 0) {
+            show_debug_message("adding room slot at " + string(room_x) + ", " + string(room_y) + " to room " + string(ii + 1));
+            global.rooms[ii].room_path[jj] = ds_grid_get(global.room_slots, room_x, room_y);
+            global.rooms[ii].room_path[jj].room_tag = (ii + 1); 
+            //let the room_slot know what its room_x and room_y are
+            global.rooms[ii].room_path[jj].room_x = room_x;
+            global.rooms[ii].room_path[jj].room_y = room_y;
+            rooms_added++;
+        }
         //chance to stop expanding room
         //gets greater as loop iterates 
         randomize();
@@ -121,7 +122,7 @@ for(var ii = 0; ii < rooms_to_make && can_make_rooms; ii++) {
             can_expand_room = false;
             if(jj > 0) {
                 randomize();
-                k = abs(irandom(jj));
+                k = abs(irandom(jj - 1));
                 expansion_point = global.rooms[ii].room_path[k];
                 room_x = expansion_point.room_x;
                 room_y = expansion_point.room_y;
