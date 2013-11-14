@@ -9,7 +9,7 @@ departments, wide hallways, and snaking maintance corridors.
 Currently, the generator divides a 4 x 4 grid of "room slots" - called an area - into a series of rooms, 
 each denoted by a different color. Room slots that appear black are those that were not selected.
 
-There are no doors or walls yet (I'm making that next) but the rooms progress from one to the other in 
+There are no doors yet (I'm making that next) but the rooms progress from one to the other in 
 the following order: grey -> pink -> blue -> green -> red -> yellow
 
 This "area" is meant represent one department of a space station, like Engineering, Security, or the Medbay.
