@@ -36,6 +36,9 @@ wall_bottom = true;
 wall_left = true;
 wall_right = true;
 
+extra_bottom = false; 
+extra_top = false; 
+
 width = 10 * 32;
 height = 10 * 32;
 

@@ -36,7 +36,7 @@ depth = -y+1;
 
 //Player movement variables
 control = true;                                 //Does the player have control
-move_speed = 10;                                 //Player's move speed
+move_speed = 5;                                 //Player's move speed
 
 //Debug Code
 

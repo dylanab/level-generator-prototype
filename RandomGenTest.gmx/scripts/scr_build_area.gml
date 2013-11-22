@@ -3,11 +3,13 @@ var area_width = argument0;
 var area_height = argument1;
 var start_side = argument2;
 
-var tile_size = 32; // width/height of the room's tiles
+// width/height of the room's floor tiles
+var f_tile_width = 32;//obj_floor_1.sprite_width; 
+var f_tile_height = 32;//obj_floor_1.sprite_height;
 var r_width = 10;   // width of rooms in tiles
 var r_height = 10;  // height of rooms in tiles
 
-var room_space = tile_size;  //gap between rooms (not currently in use)
+//var room_space = tile_size;  //gap between rooms (not currently in use)
 
 var can_expand_room = true;
 var can_make_rooms = true;
@@ -68,7 +70,7 @@ for(var i = 0; i < area_width; i++) {
         scr_build_room(r_width, r_height, current_x, current_y, ds_grid_get(global.room_slots, i, j));
     }
     current_y = 0;
-    current_x += (r_width * tile_size);
+    current_x += (r_width * f_tile_width);
 }
 
 

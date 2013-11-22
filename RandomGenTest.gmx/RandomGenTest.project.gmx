@@ -12,11 +12,18 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_space</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_wall_1</sprite>
+    <sprite>sprites\spr_wall_2</sprite>
     <sprite>sprites\spr_floor_0</sprite>
     <sprite>sprites\spr_floor_4</sprite>
     <sprite>sprites\spr_floor_5</sprite>
     <sprite>sprites\sprite9</sprite>
     <sprite>sprites\spr_wall_top</sprite>
+    <sprite>sprites\spr_wall_top_1</sprite>
+    <sprite>sprites\spr_wall_top_2</sprite>
+    <sprite>sprites\spr_wall_top_ext</sprite>
+    <sprite>sprites\spr_floor_plain</sprite>
+    <sprite>sprites\spr_floor_plainer</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -27,6 +34,7 @@
     <script>scripts\scr_choose_rtemplate.gml</script>
     <script>scripts\scr_divide_area.gml</script>
     <script>scripts\scr_check_walls.gml</script>
+    <script>scripts\scr_draw_corners.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_floor_1</object>
@@ -49,6 +57,7 @@
     <object>objects\obj_debug_controller</object>
     <object>objects\pnt_floor</object>
     <object>objects\obj_wall_top</object>
+    <object>objects\obj_wall_top_ext</object>
     <object>objects\pnt_wall</object>
   </objects>
   <rooms name="rooms">
